@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Home card */
+.container #contentcard {
+  width: 70vw;
+  height: fit-content;
+  margin-top: 80px;
+  padding: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Card left content */
+.leftcontent {
+  width: 50%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.leftcontent h1 {
+  font-size: 64px;
+  margin: 20px 0px;
+}
+
+.rightcontent {
+
+}
