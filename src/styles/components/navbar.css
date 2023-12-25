@@ -1,0 +1,22 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 200px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #F9F5FF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-leftcontainer {
+  justify-self: start;
+}
+.navbar-rightcontainer {
+  justify-self: end;
+}
+
+.navbar-rightcontainer a {
+  margin-left: 100px;
+}
