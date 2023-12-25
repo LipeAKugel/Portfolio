@@ -25,7 +25,11 @@ export default function Navbar() {
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
           return (
-            <Link href={link.href} key={link.name} style={{ color: isActive ? 'purple' : 'black'}}>
+            <Link 
+              href={link.href}
+              key={link.name} 
+              className={ isActive ? styles.activelink : styles.notactivelink }
+            >
               {link.name}
             </Link>
           )

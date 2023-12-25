@@ -20,3 +20,13 @@
 .rightcontainer a {
   margin-left: 100px;
 }
+
+.activelink {
+  color: #4D148C;
+  text-decoration: underline;
+}
+
+.notactivelink {
+  color: black;
+  text-decoration: none;
+}
