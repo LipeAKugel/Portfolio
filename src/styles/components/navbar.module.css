@@ -1,9 +1,12 @@
 .container {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  padding: 0px 200px;
   font-size: 24px;
   font-weight: bold;
   background-color: #F9F5FF;
@@ -11,10 +14,11 @@
 }
 
 .leftcontainer {
-  justify-self: start;
+  margin-left: 150px;
 }
+
 .rightcontainer {
-  justify-self: end;
+  margin-right: 150px;
 }
 
 .rightcontainer a {
