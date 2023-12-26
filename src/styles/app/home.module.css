@@ -28,7 +28,11 @@
 
 .leftcontent h1 {
   font-size: 64px;
-  margin: 20px 0px;
+  margin: 10px 0px;
+}
+
+.leftcontent button {
+  margin-top: 40px;
 }
 
 .rightcontent {
