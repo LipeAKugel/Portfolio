@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "../styles/components/navbar.css"
+import styles from "../styles/components/navbar.module.css"
 
 export default function Navbar() {
 
@@ -15,17 +15,21 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="navbar-container">
+    <header className={styles.container}>
 
-      <div className="navbar-leftcontainer">
+      <div className={styles.leftcontainer}>
         <p>Hi, I am Felipe Amorim</p>
       </div>
 
-      <div className="navbar-rightcontainer">
+      <div className={styles.rightcontainer}>
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
           return (
-            <Link href={link.href} key={link.name} style={{ color: isActive ? 'purple' : 'black'}}>
+            <Link 
+              href={link.href}
+              key={link.name} 
+              className={ isActive ? styles.activelink : styles.notactivelink }
+            >
               {link.name}
             </Link>
           )

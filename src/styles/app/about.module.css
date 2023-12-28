@@ -1,0 +1,23 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content card */
+.container #contentcard {
+  width: 40vw;
+  height: fit-content;
+  padding: 150px;
+  display: block;
+}
+
+#contentcard h1 {
+  font-size: 60px;
+}
+
+#contentcard p {
+  font-size: 24px;
+}
