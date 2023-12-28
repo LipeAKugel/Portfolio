@@ -1,18 +1,16 @@
 .container {
   width: 100vw;
-  padding-top: 100px;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Home card */
 .container #contentcard {
   width: 70vw;
   height: fit-content;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding: 150px;
+  padding: 120px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,7 +19,7 @@
 /* Card left content */
 .leftcontent {
   width: 50%;
-  height: 700px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,10 +27,32 @@
 }
 
 .leftcontent h1 {
-  font-size: 64px;
+  font-size: 60px;
   margin: 10px 0px;
 }
 
 .leftcontent button {
   margin-top: 40px;
+}
+
+/* Card right content */
+.rightcontent {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightcontent img {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.rightcontent img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
 }

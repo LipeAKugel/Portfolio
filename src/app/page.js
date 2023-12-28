@@ -2,6 +2,8 @@
 import Button from "@/components/button"
 import styles from "../styles/app/home.module.css"
 import { useRouter } from "next/navigation";
+import profilePic from "../../assets/profile.png";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -9,6 +11,10 @@ export default function Home() {
 
   const redirectToContact = () => {
     router.push("/contact");
+  }
+
+  const redirectToAbout = () => {
+    router.push("/about");
   }
 
   return (
@@ -22,7 +28,11 @@ export default function Home() {
           <Button label="Contact" onClick={() => redirectToContact()}/>
         </div>
         <div className={styles.rightcontent}>
-
+          <Image
+            alt="profilePic" 
+            src={profilePic}
+            onClick={() => redirectToAbout()}
+          />
         </div>
       </div>
 
