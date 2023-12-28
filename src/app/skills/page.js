@@ -1,5 +1,11 @@
+import styles from "../../styles/app/skills.module.css"
+
 export default function Skills() {
   return (
-    <h1>Skills page</h1>
+    <div className={styles.container}>
+      <div className="card" id={styles.contentcard}>
+        <h1>My projects</h1>
+      </div>
+    </div>
   )
 }

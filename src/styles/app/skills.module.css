@@ -1,0 +1,21 @@
+.container {
+  width: 100vw;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#contentcard {
+  width: 60%;
+  height: fit-content;
+  margin: 50px 0px;
+  padding: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contentcard h1 {
+  font-size: 60px;
+}
