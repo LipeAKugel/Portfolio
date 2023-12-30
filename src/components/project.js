@@ -5,9 +5,11 @@ import Link from "next/link";
 export default function Project({ name, description, imgurl, projecturl}) {
   return (
     <div className={styles.container}>
-      <h1>{name}</h1>
+      <h2>{name}</h2>
+      <div className={styles.image_container}>
+        <Image src={imgurl} alt=""/>
+      </div>
       <Link href={projecturl}>{projecturl}</Link>
-      <Image src={imgurl} alt=""/>
       <p>{description}</p>
     </div>
   )

@@ -11,9 +11,7 @@
   height: fit-content;
   margin: 50px 0px;
   padding: 120px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
 }
 
 #contentcard h1 {
