@@ -1,7 +1,7 @@
 import Project from "@/components/project"
 import styles from "../../styles/app/skills.module.css"
 import skarlet from "../../../assets/skarlet.png";
-import printgo from "../../../assets/printgo.svg"
+import printgo from "../../../assets/printgo.png";
 
 export default function Skills() {
 
@@ -9,15 +9,25 @@ export default function Skills() {
     {
       name: "PrintGo",
       projecturl: "https://github.com/fga-eps-mds/2023.2-PrintGo-Doc",
-      imgurl: printgo,
+      img: printgo,
       description: "PrintGo is a web application developed by team of 15 students from two different college courses. It is a system produced for the Civil Police of Goías with the goal of monitoring printing assets. The tool helps count and report impressions and is able to present a dashboard with printer info. I was one of the lead developers of the project during the it's first semester, it was the first serious application I developed with a real client."
     },
     {
       name: "Skarlet",
       projecturl: "https://github.com/Feudo-Vermelho-Rosas/Skarlet",
-      imgurl: skarlet,
+      img: skarlet,
       description: "Skarlet is top-down rpg game developed by team of 7 students at the Universidade de Brasília. The game is set in a world with a series of islands, each representing a different level, the player controls mysterious character that seeks the power of a treasure. The game was developed as part of a third-semester software development course, and I was one of the lead developers during the entirety of the project."
     },
+    {
+      name: "Gammapharma",
+      projecturl: "https://github.com/LipeAKugel/Gammapharma",
+      description: "Gammapharma is a simple Java mini application developed as a project for a college course, it simulates a pharmacy application where you can manage the registration of products and affiliated pharmacies."
+    },
+    {
+      name: "Shared Generation System",
+      projecturl: "https://github.com/LipeAKugel/APC-UnB/tree/main/C/Trabalho%20em%20C",
+      description: "This application was written as my first project in college, it was the final project of a course called Algoritmo e Programação de Computadores, it's a terminal application written fully in C, that allows the control of clients, power plants and contracts between them."
+    }
   ]
 
   return (
@@ -30,11 +40,57 @@ export default function Skills() {
               key={project.name}
               name={project.name}
               projecturl={project.projecturl}
-              imgurl={project.imgurl}
+              img={project.img}
               description={project.description}
             />
           )
         })}
+        <h1>My skills</h1>
+        <h2>Technical Skills:</h2>
+        <ul>
+          <li>
+            Web Development: I have knowledge of frameworks 
+            like React and NextJS and technologies like Node.js 
+            Prisma, Docker and PostgreSQL. I have a good understanding 
+            of HTML, CSS, and JavaScript, which are the main 
+            technologies used for web development.
+          </li>
+          <li>
+            Game Development: I have experience in developing 2D games 
+            in the GameMakerStudio 2 engine and using the Pygame library.
+            My first programming experiences came from making games in school.
+          </li>
+          <li>
+            Other Programming Languages: I also have experience in Python, 
+            C, C++, and Java. I have used these languages mostly for college 
+            projects and problem solving. 
+          </li>
+        </ul>
+        <h2>Additional Skills:</h2>
+        <ul>
+          <li>
+            Ability to Work Independently and in Teams: I am able 
+            to work independently and in teams, and I have experience 
+            in both environments.
+          </li>
+          <li>
+            Good Communication Skills: I have good communication skills, 
+            both orally and in writing.
+          </li>
+          <li>
+            Ability to Learn New Technologies: I am able to learn new 
+            technologies quickly and apply the knowledge gained to 
+            real-world projects.
+          </li>
+        </ul>
+
+        <p>
+          In conclusion, I am a software developer with knowledge of a variety of technologies. 
+          I have experience in web development, game development, and other areas. 
+          I am able to work independently and in teams, and I have good communication 
+          skills. I am always willing to learn new technologies 
+          and challenges.
+        </p>
       </div>
     </div>
   )
