@@ -1,16 +1,15 @@
 .container {
   width: 100vw;
-  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-/* Content card */
-.container #contentcard {
-  width: 50vw;
-  margin: 50px 0px;
+#contentcard {
+  width: 60%;
   height: fit-content;
+  margin: 50px 0px;
   padding: 120px;
   display: block;
 }
@@ -23,11 +22,7 @@
   font-size: 24px;
 }
 
-#contentcard img {
-  width: 100%;
-  height: 100%;
-}
-
 #contentcard li {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }

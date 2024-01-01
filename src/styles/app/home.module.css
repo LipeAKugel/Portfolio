@@ -1,15 +1,16 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Home card */
 .container #contentcard {
   width: 70vw;
   height: fit-content;
+  margin-top: 50px;
   padding: 120px;
   display: flex;
   justify-content: flex-start;
