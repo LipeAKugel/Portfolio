@@ -1,9 +1,15 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "../styles/components/navbar.module.css"
+import { FiMoon } from "react-icons/fi";
+import { BsSun } from "react-icons/bs"
+import styles from "../styles/components/navbar.module.css";
+import { useTheme } from "next-themes";
+
 
 export default function Navbar() {
+
+  const { theme, setTheme } = useTheme();
 
   const navLinks = [
       { name: "Home", href: "/" },
@@ -16,6 +22,7 @@ export default function Navbar() {
 
   return (
     <header className={styles.container}>
+      <div className={styles.links}>
       {navLinks.map((link) => {
         const isActive = pathname === link.href;
         return (
@@ -28,6 +35,16 @@ export default function Navbar() {
           </Link>
         )
       })}
+      </div>
+
+      <div className={styles.theme_icon}>
+        {theme === "dark" ? (
+          <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+        ) : (
+          <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+        )}
+      </div>
+
     </header>
   )
 }

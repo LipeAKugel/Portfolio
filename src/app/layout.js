@@ -1,3 +1,4 @@
+import Providers from "./Providers"
 import Navbar from "@/components/navbar"
 import "../styles/global.css"
 import localFont from "next/font/local"
@@ -16,10 +17,12 @@ export default function RootLayout({ children }) {
  return (
     <html lang="en">
       <body>
+        <Providers>
         <div className={pixelatedFont.className}>
           <Navbar/>
           {children}
         </div>
+        </Providers>
       </body>
     </html>
   )

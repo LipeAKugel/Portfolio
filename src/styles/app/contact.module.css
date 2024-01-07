@@ -22,14 +22,14 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: var(--color-text);
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .social:hover {
-  background-color: #811AC0;
+  background-color: var(--color-highlight);
   color: #F9F5FF;
 }
 
