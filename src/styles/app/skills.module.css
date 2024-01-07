@@ -1,28 +1,14 @@
 .container {
   width: 100vw;
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
 #contentcard {
-  width: 60%;
+  width: 50%;
   height: fit-content;
   margin: 50px 0px;
-  padding: 120px;
   display: block;
-}
-
-#contentcard h1 {
-  font-size: 60px;
-}
-
-#contentcard p {
-  font-size: 24px;
-}
-
-#contentcard li {
-  font-size: 24px;
-  margin-bottom: 20px;
 }

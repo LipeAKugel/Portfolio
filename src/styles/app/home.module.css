@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -10,8 +10,7 @@
 .container #contentcard {
   width: 70vw;
   height: fit-content;
-  margin-top: 50px;
-  padding: 120px;
+  margin: 50px 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -20,7 +19,6 @@
 /* Card left content */
 .leftcontent {
   width: 50%;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +26,6 @@
 }
 
 .leftcontent h1 {
-  font-size: 60px;
   margin: 10px 0px;
 }
 
@@ -52,8 +49,5 @@
 }
 
 .rightcontent img:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
-  transition: 1s ease;
 }
