@@ -1,9 +1,8 @@
 import styles from "../../styles/app/skills.module.css"
 import skarlet from "../../../assets/skarlet.png";
 import printgo from "../../../assets/printgo.png";
+import gammaPharma from "../../../assets/gammapharma.png";
 import apcProject from "../../../assets/apc-project.png";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Carousel from "@/components/carousel";
 
 export default function Skills() {
@@ -22,8 +21,9 @@ export default function Skills() {
       description: "Skarlet is top-down rpg game developed by team of 7 students at the Universidade de Brasília. The game is set in a world with a series of islands, each representing a different level, the player controls mysterious character that seeks the power of a treasure."
     },
     {
-      name: "Gammapharma",
+      name: "Gamma pharma",
       url: "https://github.com/LipeAKugel/Gammapharma",
+      img: gammaPharma,
       description: "Gammapharma is a simple Java mini application developed as a project for a college course, it simulates a pharmacy application where you can manage the registration of products and affiliated pharmacies."
     },
     {
