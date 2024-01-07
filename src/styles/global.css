@@ -6,8 +6,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   margin: 0px;
   background-image: url('../../public/images/space-background.jpg');
   background-size: cover;
