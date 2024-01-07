@@ -1,4 +1,3 @@
-"use client";
 import styles from "../../styles/app/skills.module.css"
 import skarlet from "../../../assets/skarlet.png";
 import printgo from "../../../assets/printgo.png";
@@ -9,37 +8,31 @@ import Carousel from "@/components/carousel";
 
 export default function Skills() {
 
-  const router = useRouter();
-
   const projects = [
     {
       name: "PrintGo",
-      projecturl: "https://github.com/fga-eps-mds/2023.2-PrintGo-Doc",
+      url: "https://github.com/fga-eps-mds/2023.2-PrintGo-Doc",
       img: printgo,
       description: "PrintGo is a web application developed by team of 15 students from two different college courses. It is a system produced for the Civil Police of Goías with the goal of monitoring printing assets. The tool helps count and report impressions and is able to present a dashboard with printer info."
     },
     {
       name: "Skarlet",
-      projecturl: "https://github.com/Feudo-Vermelho-Rosas/Skarlet",
+      url: "https://github.com/Feudo-Vermelho-Rosas/Skarlet",
       img: skarlet,
       description: "Skarlet is top-down rpg game developed by team of 7 students at the Universidade de Brasília. The game is set in a world with a series of islands, each representing a different level, the player controls mysterious character that seeks the power of a treasure."
     },
     {
       name: "Gammapharma",
-      projecturl: "https://github.com/LipeAKugel/Gammapharma",
+      url: "https://github.com/LipeAKugel/Gammapharma",
       description: "Gammapharma is a simple Java mini application developed as a project for a college course, it simulates a pharmacy application where you can manage the registration of products and affiliated pharmacies."
     },
     {
       name: "Algothrims Project",
-      projecturl: "https://github.com/LipeAKugel/APC-UnB/tree/main/C/Trabalho%20em%20C",
+      url: "https://github.com/LipeAKugel/APC-UnB/tree/main/C/Trabalho%20em%20C",
       img: apcProject,
       description: "This application was written as my first project in college, it was the final project of a course called Algoritmo e Programação de Computadores, it's a terminal application written fully in C."
     }
   ]
-
-  const redirectTo = (url) => {
-    router.push(url)
-  }
 
   return (
     <div className={styles.container}>
