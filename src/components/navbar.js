@@ -5,11 +5,23 @@ import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs"
 import styles from "../styles/components/navbar.module.css";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 
 export default function Navbar() {
 
+  const pathname = usePathname();
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme();
+
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   const navLinks = [
       { name: "Home", href: "/" },
@@ -17,8 +29,6 @@ export default function Navbar() {
       { name: "Skills", href: "/skills" },
       { name: "Contact", href: "/contact" },
   ]
-
-  const pathname = usePathname();
 
   return (
     <header className={styles.container}>
@@ -40,9 +50,9 @@ export default function Navbar() {
       <div className={styles.theme_icon}>
         {theme === "dark" ? (
           <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-        ) : (
+        ) : theme === "light" ? (
           <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
-        )}
+        ) : {}}
       </div>
 
     </header>
