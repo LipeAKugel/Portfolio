@@ -5,6 +5,7 @@ import printgo from "../../../assets/printgo.png";
 import apcProject from "../../../assets/apc-project.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Carousel from "@/components/carousel";
 
 export default function Skills() {
 
@@ -44,22 +45,9 @@ export default function Skills() {
     <div className={styles.container}>
       <div className="card" id={styles.contentcard}>
         <h1>My projects</h1>
-        <div className={styles.projects_wrapper}>
-          {projects.map(project => (
-            <div 
-              key={project.name} 
-              className={styles.project_item}
-              onClick={() => redirectTo(project.projecturl)}
-            >
-              <Image src={project.img} alt="project image"/>
-              <div className={styles.project_info}>
-                <h1 className={styles.project_title}>{project.name}</h1>
-                <p className={styles.project_description}>{project.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
+          <Carousel
+            items={projects}
+          />
         <h1>My skills</h1>
         <h2>Technical Skills:</h2>
         <ul>

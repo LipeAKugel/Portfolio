@@ -1,0 +1,58 @@
+.projects_wrapper {
+  display: flex;
+  align-self: center;
+  padding: 40px;
+  gap: 20px;
+  overflow: scroll;
+  cursor: pointer;
+}
+
+.project_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #F9F5FF;
+  transition: all 0.3s;
+}
+
+.project_item img {
+  width: 330px;
+  height: 330px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.project_item:hover {
+  transform: scale(1.1);
+  margin: 0px 30px;
+}
+
+.project_item:hover .project_info {
+  opacity: 1;
+} 
+
+.project_info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project_title {
+  width: fit-content;
+  background-color: rgba(141, 141, 141, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.project_description {
+  width: fit-content;
+  border-radius: 10px;
+  margin: 0px;
+  background-color: rgba(141, 141, 141, 0.8);
+  padding: 10px;
+}
