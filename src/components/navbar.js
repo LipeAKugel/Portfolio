@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("blue");
 
 
   useEffect(() => {
@@ -48,11 +48,13 @@ export default function Navbar() {
       </div>
 
       <div className={styles.theme_icon}>
-        {theme === "dark" ? (
-          <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-        ) : theme === "light" ? (
-          <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
-        ) : {}}
+        {theme && (
+          theme === "dark" ? (
+            <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+          ) : (
+            <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+          )
+        )}
       </div>
 
     </header>
