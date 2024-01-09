@@ -7,6 +7,7 @@
 
 #content_card {
   width: 25vw;
+  min-width: fit-content;
   margin: 50px 0px;
   height: fit-content;
   display: block;
