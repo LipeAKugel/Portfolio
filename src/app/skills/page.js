@@ -21,7 +21,7 @@ export default function Skills() {
       description: "Skarlet is top-down rpg game developed by team of 7 students at the Universidade de Brasília. The game is set in a world with a series of islands, each representing a different level, the player controls mysterious character that seeks the power of a treasure."
     },
     {
-      name: "Gamma pharma",
+      name: "Gammapharma",
       url: "https://github.com/LipeAKugel/Gammapharma",
       img: gammaPharma,
       description: "Gammapharma is a simple Java mini application developed as a project for a college course, it simulates a pharmacy application where you can manage the registration of products and affiliated pharmacies."
