@@ -17,15 +17,38 @@
   gap: 70px;
 }
 
+.link {
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 0;
+}
+
+.link h2 {
+  position: relative;
+}
+
+.link h2::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.link:hover h2::before {
+  width: 100%;
+  background-color: var(--color-highlight);
+}
+
 .activelink {
   color: var(--color-primary);
-  text-decoration: underline;
 }
 
 .notactivelink {
   color: var(--color-text);
-  text-decoration: none;
-  transition: 0.5s;
 }
 
 .notactivelink:hover {

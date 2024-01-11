@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link 
             href={link.href}
             key={link.name} 
-            className={ isActive ? styles.activelink : styles.notactivelink }
+            className={`${styles.link}  ${isActive ? styles.activelink : styles.notactivelink}`}
           >
             <h2>{link.name}</h2>
           </Link>
