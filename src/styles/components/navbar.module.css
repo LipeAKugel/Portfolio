@@ -23,6 +23,10 @@
   margin: 0;
 }
 
+.link:hover {
+  color: var(--color-highlight);
+}
+
 .link h2 {
   position: relative;
 }
@@ -49,10 +53,6 @@
 
 .notactivelink {
   color: var(--color-text);
-}
-
-.notactivelink:hover {
-  color: var(--color-highlight);
 }
 
 .theme_icon {
