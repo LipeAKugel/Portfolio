@@ -12,12 +12,12 @@ export default function Navbar() {
 
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme("blue");
-
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+    setTheme("dark")
+  }, [setTheme])
 
   if (!mounted) {
     return null
