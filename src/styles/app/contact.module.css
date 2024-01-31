@@ -6,11 +6,28 @@
 }
 
 #content_card {
-  width: 25vw;
+  width: 60vw;
   min-width: fit-content;
   margin: 50px 0px;
   height: fit-content;
+}
+
+#content_card h1 {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 80px;
+}
+
+.socials {
+  width: 50%;
   display: block;
+}
+
+.emailContact {
+  width: 50%;
 }
 
 .social {

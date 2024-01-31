@@ -33,15 +33,28 @@ p {
   font-size: 16px;
 }
 
+label {
+  font-size: 18px;
+}
+
 span {
   font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 16px;
 }
 
 button {
   font-size: 18px;
 }
 
-/* Custom card */
 .card {
   border-radius: 30px;
   padding: 80px;
