@@ -14,10 +14,10 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme();
 
-
   useEffect(() => {
     setMounted(true)
-  }, [])
+    setTheme("dark")
+  }, [setTheme])
 
   if (!mounted) {
     return null
@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link 
             href={link.href}
             key={link.name} 
-            className={ isActive ? styles.activelink : styles.notactivelink }
+            className={`${styles.link}  ${isActive ? styles.activelink : styles.notactivelink}`}
           >
             <h2>{link.name}</h2>
           </Link>
@@ -48,11 +48,13 @@ export default function Navbar() {
       </div>
 
       <div className={styles.theme_icon}>
-        {theme === "dark" ? (
-          <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
-        ) : theme === "light" ? (
-          <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
-        ) : {}}
+        {theme && (
+          theme === "dark" ? (
+            <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+          ) : (
+            <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")} />
+          )
+        )}
       </div>
 
     </header>

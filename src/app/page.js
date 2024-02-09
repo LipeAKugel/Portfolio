@@ -23,7 +23,7 @@ export default function Home() {
       <div className="card" id={styles.contentcard}>
         <div className={styles.leftcontent}>
           <h1>Hi,</h1>
-          <h1>I am Felipe Amorim</h1>
+          <h1>I am <span>Felipe Amorim</span></h1>
           <h1>Software Developer</h1>
           <Button label="Contact" onClick={() => redirectToContact()}/>
         </div>

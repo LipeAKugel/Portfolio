@@ -28,6 +28,10 @@
   margin: 10px 0px;
 }
 
+.leftcontent span {
+  color: var(--color-primary);
+}
+
 .leftcontent button {
   margin-top: 40px;
 }

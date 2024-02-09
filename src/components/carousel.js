@@ -1,24 +1,33 @@
+"use client";
 import styles from "../styles/components/carousel.module.css"
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function Carousel({ items }) {
 
+  const carousel = useRef(null);
+
   return (
-    <div className={styles.carousel_wrapper}>
-      {items.map(item => (
-        <Link
-          key={item.name} 
-          className={styles.carousel_item}
-          href={item.url}
-        >
-          <Image src={item.img} alt="project image"/>
-          <div className={styles.item_info}>
-            <h1 className={styles.item_title}>{item.name}</h1>
-            <p className={styles.item_description}>{item.description}</p>
-          </div>
-        </Link>
-      ))}
-    </div>
+    <motion.div ref={carousel} className={styles.carousel}>
+      <motion.div
+        drag="x"
+        dragConstraints={carousel}
+        className={styles.inner_carousel}
+      >
+        {items.map(item => (
+          <motion.div className={styles.item} key={item.name}>
+            <Image src={item.img} alt={item.name} />
+            <div className={styles.item_info}>
+              <Link href={item.url}>
+                <h1>{item.name}</h1>
+              </Link>
+              <p>{item.description}</p>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </motion.div>
   )
 }

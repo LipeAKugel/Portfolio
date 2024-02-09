@@ -4,6 +4,7 @@ import githubLogo from "../../../assets/githubLogo.svg";
 import linkedInLogo from "../../../assets/linkedInLogo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/components/contactForm";
 
 
 export default function Contact() {
@@ -30,16 +31,23 @@ export default function Contact() {
     <div className={styles.container}>
       <div className="card" id={styles.content_card}>
         <h1>Contact</h1>
-        {socials.map(social => (
-          <Link 
-            href={social.url} 
-            key={social.url}
-            className={styles.social}
-          >
-            <Image src={social.img} alt=""/>
-            {social.name}
-          </Link>
-        ))}
+        <div className={styles.content}>
+          <div className={styles.emailContact}>
+            <ContactForm/>
+          </div>
+          <div className={styles.socials}>
+            {socials.map(social => (
+              <Link 
+                href={social.url} 
+                key={social.url}
+                className={styles.social}
+              >
+                <Image src={social.img} alt=""/>
+                {social.name}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
