@@ -36,6 +36,13 @@ export default function ContactForm() {
       })
     })
 
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+
     console.log(formData);
   }
 
@@ -47,6 +54,7 @@ export default function ContactForm() {
           {key === "message" ? (
             <textarea 
               name={key}
+              value={formData[key]}
               placeholder={value}
               onChange={handleChange}
               required
@@ -55,6 +63,7 @@ export default function ContactForm() {
             <input 
               type="email"
               name={key}
+              value={formData[key]}
               placeholder={value}
               onChange={handleChange}
               required
@@ -63,6 +72,7 @@ export default function ContactForm() {
             <input 
               type="text"
               name={key}
+              value={formData[key]}
               placeholder={value}
               onChange={handleChange}
               required
