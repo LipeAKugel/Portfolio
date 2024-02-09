@@ -25,6 +25,17 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    await fetch('api/email', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      })
+    })
+
     console.log(formData);
   }
 
