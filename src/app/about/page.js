@@ -62,7 +62,7 @@ export default function AboutMe() {
             You can have a look at my projects and skills here:
           </p>
         </div>
-        <Link href="/skills">My Skills &gt;&gt;</Link>
+        <Link href="/skills" className={styles.skillslink}>My Skills &gt;&gt;</Link>
         <div className={styles.text}>
           <h2>Curiosities:</h2>
           <p>
