@@ -9,10 +9,6 @@ export default function Home() {
 
   const router = useRouter();
 
-  const redirectToContact = () => {
-    router.push("/contact");
-  }
-
   const redirectToAbout = () => {
     router.push("/about");
   }
@@ -25,7 +21,7 @@ export default function Home() {
           <h1>Hi,</h1>
           <h1>I am <span>Felipe Amorim</span></h1>
           <h1>Software Developer</h1>
-          <Button label="Contact" onClick={() => redirectToContact()}/>
+          <Button label="About Me >>" onClick={() => redirectToAbout()}/>
         </div>
         <div className={styles.rightcontent}>
           <Image

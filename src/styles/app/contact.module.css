@@ -35,10 +35,11 @@
   align-items: center;
   height: 80px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
+  background-color: var(--color-second-background);
   color: var(--color-text);
   text-decoration: none;
   cursor: pointer;

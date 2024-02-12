@@ -7,13 +7,44 @@
 
 /* Content card */
 .container #contentcard {
-  width: 50vw;
+  width: 70vw;
   margin: 50px 0px;
   height: fit-content;
   display: block;
 }
 
-#contentcard img {
-  width: 100%;
+.text {
+  background-color: var(--color-second-background);
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
+.introduction {
+  display: flex;
+  height: fit-content;
+  gap: 20px;
+}
+
+.introduction .text {
   height: 100%;
+}
+
+#contentcard img {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
+.skillslink {
+  margin: 20px 0px;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.skillslink:hover {
+  color: var(--color-highlight);
 }
