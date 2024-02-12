@@ -11,3 +11,26 @@
   margin: 50px 0px;
   display: block;
 }
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info h2 {
+  font-size: 24px;
+}
+
+.info li {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.leftcontent {
+  width: 50%;
+}
+
+.rightcontent {
+  width: 50%;
+}
+

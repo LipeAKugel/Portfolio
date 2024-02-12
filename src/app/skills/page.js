@@ -37,56 +37,57 @@ export default function Skills() {
   return (
     <div className={styles.container}>
       <div className="card" id={styles.contentcard}>
+        <h1>Skillset</h1>  
+        <div className={styles.info}>
+          <div className={styles.leftcontent}>
+            <ul>
+              <h2>Preferred Languages:</h2>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>C++</li>
+            </ul>
+            <ul>
+              <h2>Other Languages:</h2>
+              <li>Java</li>
+              <li>RISC-V Assembly</li>
+            </ul>
+            <ul>
+              <h2>Other Skills:</h2>
+              <li>Communication:</li>
+              Ability to have good communication orally and writing.
+              <li>Learning:</li>
+              Able to learn new technologies quickly and apply knowledge gained to real-world projects.
+              <li>Collaboration and Autonomy:</li>
+              Able to work well independently and also collaborate with teams.
+            </ul>
+          </div>
+          <div className={styles.rightcontent}>
+            <ul>
+              <h2>Technologies:</h2>
+              <li>Webdev:</li>
+              React, NextJS, NodeJs, Typescript
+              <li>Databases:</li>
+              Prisma, PostgreSQL, MySQL
+              <li>Source Control:</li>
+              Git, Github
+              <li>Gamedev:</li>
+              GameMakerStudio 2, Pygame
+              <li>Devops:</li>
+              Bash, Docker
+              <li>Operating Systems:</li>
+              Windows, Linux (Ubuntu)
+            </ul>
+            <ul>
+              <h2>Education:</h2>
+              <li>(5th Semester) Bachelor's in Software Engineering at UnB</li>
+            </ul>
+          </div>
+        </div>   
         <h1>My projects</h1>
           <Carousel
             items={projects}
-          />
-        <h1>My skills</h1>
-        <h2>Technical Skills:</h2>
-        <ul>
-          <li>
-            Web Development: I have knowledge of frameworks 
-            like React and NextJS and technologies like Node.js 
-            Prisma, Docker and PostgreSQL. I have a good understanding 
-            of HTML, CSS, and JavaScript, which are the main 
-            technologies used for web development.
-          </li>
-          <li>
-            Game Development: I have experience in developing 2D games 
-            in the GameMakerStudio 2 engine and using the Pygame library.
-            My first programming experiences came from making games in school.
-          </li>
-          <li>
-            Other Programming Languages: I also have experience in Python, 
-            C, C++, and Java. I have used these languages mostly for college 
-            projects and problem solving. 
-          </li>
-        </ul>
-        <h2>Additional Skills:</h2>
-        <ul>
-          <li>
-            Ability to Work Independently and in Teams: I am able 
-            to work independently and in teams, and I have experience 
-            in both environments.
-          </li>
-          <li>
-            Good Communication Skills: I have good communication skills, 
-            both orally and in writing.
-          </li>
-          <li>
-            Ability to Learn New Technologies: I am able to learn new 
-            technologies quickly and apply the knowledge gained to 
-            real-world projects.
-          </li>
-        </ul>
-
-        <p>
-          In conclusion, I am a software developer with knowledge of a variety of technologies. 
-          I have experience in web development, game development, and other areas. 
-          I am able to work independently and in teams, and I have good communication 
-          skills. I am always willing to learn new technologies 
-          and challenges.
-        </p>
+          />   
       </div>
     </div>
   )
