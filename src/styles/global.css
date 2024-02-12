@@ -1,5 +1,6 @@
 :root {
   --color-background: #f9f5ff;
+  --color-second-background: #d5d5d5;
   --color-text: #000;
   --color-primary: #4D148C;
   --color-highlight: #811ac0;
@@ -16,6 +17,7 @@ body {
 
 [data-theme="dark"] {
   --color-background: #121212;
+  --color-second-background: #0a0a0a;
   --color-text: #fff;
   --color-primary: #7922d5;
   --color-highlight: #ac26ff;
@@ -26,15 +28,15 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 label {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 span {
@@ -43,16 +45,16 @@ span {
 
 input {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 textarea {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .card {

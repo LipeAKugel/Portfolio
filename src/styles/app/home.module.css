@@ -25,7 +25,10 @@
 }
 
 .leftcontent h1 {
-  margin: 10px 0px;
+  margin: 5px 0px;
+  background-color: var(--color-second-background);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .leftcontent span {
@@ -33,7 +36,7 @@
 }
 
 .leftcontent button {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* Card right content */
@@ -45,8 +48,8 @@
 }
 
 .rightcontent img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   cursor: pointer;
   transition: 1s ease;
 }

@@ -15,10 +15,18 @@
 .info {
   display: flex;
   justify-content: flex-start;
+  gap: 20px;
 }
 
 .info h2 {
   font-size: 24px;
+}
+
+.info ul {
+  border-radius: 15px;
+  padding: 5px 40px 20px;
+  margin: 20px 0px;
+  background-color: var(--color-second-background);
 }
 
 .info li {

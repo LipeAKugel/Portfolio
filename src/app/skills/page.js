@@ -80,7 +80,7 @@ export default function Skills() {
             </ul>
             <ul>
               <h2>Education:</h2>
-              <li>(5th Semester) Bachelor's in Software Engineering at UnB</li>
+              <li>(5th Semester) Bachelor&apos;s in Software Engineering at UnB</li>
             </ul>
           </div>
         </div>   
