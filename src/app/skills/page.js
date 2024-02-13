@@ -99,9 +99,11 @@ export default function Skills() {
           </div>
         </div>   
         <h1>My projects</h1>
+        <div className={styles.projectsContainer}>
           <Carousel
             items={projects}
-          />   
+          />
+        </div>
       </div>
     </div>
   )

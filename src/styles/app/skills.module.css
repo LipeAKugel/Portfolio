@@ -42,3 +42,8 @@
   width: 50%;
 }
 
+.projectsContainer {
+  border-radius: 15px;
+  padding: 10px 10px;
+  background-color: var(--color-second-background);
+}
