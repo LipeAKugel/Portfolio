@@ -1,6 +1,8 @@
 import styles from "../../styles/app/skills.module.css"
 import skarlet from "../../../assets/skarlet.png";
 import printgo from "../../../assets/printgo.png";
+import europa from "../../../assets/europa.png";
+import bloquinho from "../../../assets/bloquinho.png";
 import gammaPharma from "../../../assets/gammapharma.png";
 import apcProject from "../../../assets/apc-project.png";
 import Carousel from "@/components/carousel";
@@ -13,6 +15,18 @@ export default function Skills() {
       url: "https://github.com/fga-eps-mds/2023.2-PrintGo-Doc",
       img: printgo,
       description: "PrintGo is a web application developed by team of 15 students from two different college courses. It is a system produced for the Civil Police of Goías with the goal of monitoring printing assets. The tool helps count and report impressions and is able to present a dashboard with printer info."
+    },
+    {
+      name: "Bloquinho",
+      url: "https://github.com/Jauzimm/Bloquinho-FrontEnd",
+      img: bloquinho,
+      description: "Bloquinho is a web application being built by me and a colleague using React. It's a note-taking app that allows for note writing and saving, it will include a login system and we have plans to include markdown support."
+    },
+    {
+      name: "Europa",
+      url: "https://github.com/LipeAKugel/Europa",
+      img: europa,
+      description: "Europa is a space-themed exploration platformer game, it's a personal project currently is very early development built with Python and the Pygame library."
     },
     {
       name: "Skarlet",
@@ -30,7 +44,7 @@ export default function Skills() {
       name: "Algothrims Project",
       url: "https://github.com/LipeAKugel/APC-UnB/tree/main/C/Trabalho%20em%20C",
       img: apcProject,
-      description: "This application was written as my first project in college, it was the final project of a course called Algoritmo e Programação de Computadores, it's a terminal application written fully in C."
+      description: "This application was written as my first project in college, it was the final project of a course called Algoritmo e Programacao de Computadores, it's a terminal application written fully in C."
     }
   ]
 
