@@ -58,11 +58,11 @@ export default function AboutMe() {
             <li>Work on challenging and rewarding projects.</li>
             <li>Use my skills to make a difference wherever I am.</li>
           </ul>
-          <p>
-            You can have a look at my projects and skills here:
-          </p>
         </div>
-        <Link href="/skills" className={styles.skillslink}>My Skills &gt;&gt;</Link>
+        <div className={styles.text}>
+          <p>You can have a look at my projects and skills here:</p>
+          <Button label="Skills >>" onClick={() => redirectToSkills()}/>         
+        </div>
         <div className={styles.text}>
           <h2>Curiosities:</h2>
           <p>
