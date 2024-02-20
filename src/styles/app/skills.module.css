@@ -25,13 +25,14 @@
 .info ul {
   border-radius: 15px;
   padding: 5px 40px 20px;
-  margin: 20px 0px;
+  font-size: 18px;
+  margin: 0px 0px 20px 0px;
   background-color: var(--color-second-background);
 }
 
 .info li {
   font-size: 22px;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .leftcontent {

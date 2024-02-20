@@ -75,6 +75,10 @@ export default function Skills() {
               <li>Collaboration and Autonomy:</li>
               Able to work well independently and also collaborate with teams.
             </ul>
+            <ul>
+              <h2>Professional Experience</h2>
+              <li>Full Stack Web Development</li>
+            </ul>
           </div>
           <div className={styles.rightcontent}>
             <ul>
@@ -95,6 +99,7 @@ export default function Skills() {
             <ul>
               <h2>Education:</h2>
               <li>(5th Semester) Bachelor&apos;s in Software Engineering at UnB</li>
+              <li>(Ciclo III) English certificate at Centro Interescolar de Linguas (724h40m)</li>
             </ul>
           </div>
         </div>   
