@@ -1,4 +1,6 @@
+"use client";
 import styles from "../../styles/app/contact.module.css";
+import gmailLogo from "../../../assets/gmailLogo.svg";
 import instagramLogo from "../../../assets/instagramLogo.svg";
 import githubLogo from "../../../assets/githubLogo.svg";
 import linkedInLogo from "../../../assets/linkedInLogo.svg";
@@ -25,7 +27,18 @@ export default function Contact() {
       name: "lipe.a_araujo",
       url: "https://www.instagram.com/lipe.a_araujo/"
     },
+    {
+      img: gmailLogo,
+      name: "felipearaujodff@gmail.com",
+      url: "https://www.instagram.com/lipe.a_araujo/"
+    },
   ]
+
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText("felipearaujodff@gmail.com").then(() => {
+      
+    })
+  }
 
   return (
     <div className={styles.container}>
@@ -37,14 +50,26 @@ export default function Contact() {
           </div>
           <div className={styles.socials}>
             {socials.map(social => (
-              <Link 
-                href={social.url} 
-                key={social.url}
-                className={styles.social}
-              >
-                <Image src={social.img} alt=""/>
-                {social.name}
-              </Link>
+              social.name === "felipearaujodff@gmail.com" ? (
+                <Link
+                  href=""
+                  onClick={copyEmailToClipboard}
+                  key={social.url}
+                  className={styles.social}
+                >
+                  <Image src={social.img} alt=""/>
+                  {social.name}
+                </Link>
+              ) : (
+                <Link 
+                  href={social.url} 
+                  key={social.url}
+                  className={styles.social}
+                >
+                  <Image src={social.img} alt=""/>
+                  {social.name}
+                </Link>
+              )
             ))}
           </div>
         </div>

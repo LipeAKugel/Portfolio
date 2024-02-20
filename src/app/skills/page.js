@@ -51,7 +51,7 @@ export default function Skills() {
   return (
     <div className={styles.container}>
       <div className="card" id={styles.contentcard}>
-        <h1>Skillset</h1>  
+        <h1>Skillset</h1>
         <div className={styles.info}>
           <div className={styles.leftcontent}>
             <ul>

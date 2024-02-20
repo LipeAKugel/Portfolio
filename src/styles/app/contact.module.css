@@ -19,6 +19,7 @@
 .content {
   display: flex;
   gap: 80px;
+  align-items: center;
 }
 
 .socials {
@@ -28,6 +29,7 @@
 
 .emailContact {
   width: 50%;
+  height: 100%;
 }
 
 .social {
