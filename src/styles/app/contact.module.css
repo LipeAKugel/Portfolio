@@ -5,6 +5,12 @@
   align-items: flex-start;
 }
 
+.clipboardModal dialog {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
 #content_card {
   width: 60vw;
   min-width: fit-content;
