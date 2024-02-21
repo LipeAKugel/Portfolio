@@ -36,10 +36,19 @@
   margin-bottom: 0px;
 }
 
-#contentcard img {
-  width: 50%;
+.fgaLink {
+  height: fit-content;
+}
+
+.fgaLink img {
+  width: 100%;
   height: 100%;
   border-radius: 20px;
+  transition: 1s ease;
+}
+
+.fgaLink img:hover {
+  transform: scale(1.03);
 }
 
 .text button {

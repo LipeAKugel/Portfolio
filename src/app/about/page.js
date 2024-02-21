@@ -10,8 +10,8 @@ export default function AboutMe() {
 
   const router = useRouter();
 
-  const redirectToSkills = () => {
-    router.push("/skills");
+  const redirect = (url) => {
+    router.push(url);
   }
 
   return (
@@ -35,7 +35,12 @@ export default function AboutMe() {
               in college.
             </p>
           </div>
-          <Image alt="fga_image" src={fgaImage} />
+          <Link
+            className={styles.fgaLink}
+            href="https://fga.unb.br/"
+          >
+            <Image alt="fga_image" src={fgaImage} />
+          </Link>
         </div>
         <div className={styles.text}>
           <h2>Software development:</h2>
@@ -61,7 +66,7 @@ export default function AboutMe() {
         </div>
         <div className={styles.text}>
           <p>You can have a look at my projects and skills here:</p>
-          <Button label="Skills >>" onClick={() => redirectToSkills()}/>         
+          <Button label="Skills >>" onClick={() => redirect("/skills")}/>         
         </div>
         <div className={styles.text}>
           <h2>Curiosities:</h2>
