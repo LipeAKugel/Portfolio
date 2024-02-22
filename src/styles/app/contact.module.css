@@ -5,6 +5,12 @@
   align-items: flex-start;
 }
 
+.clipboardModal dialog {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+
 #content_card {
   width: 60vw;
   min-width: fit-content;
@@ -19,6 +25,7 @@
 .content {
   display: flex;
   gap: 80px;
+  align-items: center;
 }
 
 .socials {
@@ -28,6 +35,7 @@
 
 .emailContact {
   width: 50%;
+  height: 100%;
 }
 
 .social {
